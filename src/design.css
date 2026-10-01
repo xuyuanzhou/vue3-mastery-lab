@@ -1,0 +1,123 @@
+/* Reading-focused visual system, aligned with the React Mastery reference. */
+:root {
+  --bg: #111615;
+  --panel: #151b19;
+  --raised: #1b2420;
+  --raised2: #243029;
+  --line: #2a3530;
+  --text: #dce4e0;
+  --soft: #bdcbc2;
+  --muted: #94a399;
+  --accent: #bbef91;
+  --accent2: #82bd66;
+  --tint: #283c2b;
+  --code: #111814;
+  --card: #171f1b;
+  color: var(--text);
+  background: var(--bg);
+}
+:root[data-theme=light] {
+  --bg: #f6f8f5;
+  --panel: #ffffff;
+  --raised: #edf2e9;
+  --raised2: #e4edde;
+  --line: #dce4d7;
+  --text: #263329;
+  --soft: #415344;
+  --muted: #637466;
+  --accent: #42752c;
+  --accent2: #58953a;
+  --tint: #eaf3e2;
+  --code: #f3f6ef;
+  --card: #ffffff;
+}
+.brand-mark { color: var(--accent); border-color: var(--line); }
+.topbar { gap: 24px; }
+.topnav a, .global-search { font-size: 12px; }
+.sidebar { padding: 20px 12px 14px; }
+.workspace-name { padding-bottom: 18px; }
+.side-shortcuts { margin-bottom: 16px; padding-bottom: 12px; }
+.side-shortcuts a { padding: 9px 12px; }
+.side-shortcuts a.active:not(.router-link-exact-active) { color: var(--muted); background: transparent; }
+.side-shortcuts a.router-link-exact-active { color: var(--accent); background: var(--tint); }
+.course-section { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; padding: 0 5px 5px; }
+.course-section + .course-section { margin-top: 10px; padding-top: 0; }
+.course-section-heading { margin: 0 -5px 5px; padding: 12px; border-bottom: 1px solid var(--line); background: var(--card); }
+.course-section-heading h2 { font-size: 13px; margin-bottom: 4px; }
+.course-group-toggle { min-height: 36px; padding: 9px 8px; }
+.course-group-toggle.is-open { background: var(--tint); color: var(--accent); }
+.course-group-chapters { margin: 5px 0 6px 10px; }
+.course-tree a { font-size: 12px; min-height: 40px; padding: 9px 7px; }
+.chapter-status { border: 0; background: var(--raised); }
+.course-tree a.selected { box-shadow: inset 2px 0 var(--accent); }
+.progress-card { background: var(--card); padding: 12px; border-radius: 8px; }
+.progress-bar i { background: var(--accent2); }
+.page { max-width: 1120px; }
+.welcome { background: var(--panel); border-radius: 12px; border-color: var(--line); }
+.welcome h1 { font-weight: 600; line-height: 1.4; }
+.welcome p { font-size: 14px; line-height: 1.85; }
+.roadmap-card, .featured-card { border-radius: 8px; background: var(--panel); }
+.roadmap-card:hover { border-color: var(--accent2); }
+.article-layout { max-width: 1180px; padding: 36px 40px 72px; gap: 32px; }
+.article-breadcrumb { font-size: 12px; margin-bottom: 26px; }
+.article-title { font-size: 32px; font-weight: 600; letter-spacing: -.035em; }
+.article-subtitle { font-size: 14px; line-height: 1.85; margin-bottom: 24px; }
+.article-toolbar { font-size: 12px; gap: 8px; }
+.article-toolbar button, .article-official-link { font-size: 12px; padding: 8px 11px; }
+.article-separator { margin: 24px 0; }
+.markdown-body { font-size: 15px; line-height: 1.85; color: var(--text); }
+.markdown-body p { line-height: 1.85; margin-bottom: 18px; }
+.markdown-body h2 { font-size: 20px; margin: 36px 0 16px; padding-bottom: 9px; }
+.markdown-body h3 { font-size: 16px; }
+.markdown-body code:not(pre code) { font-size: .88em; }
+.markdown-body pre { font-size: 13px; line-height: 1.75; border-radius: 8px; padding: 18px; }
+.markdown-body blockquote { padding: 16px 18px; border-left-color: var(--accent); color: var(--soft); }
+.markdown-body blockquote p { margin: 0; }
+.markdown-body details { padding: 15px 18px; border-radius: 8px; }
+.article-toc button { font-size: 12px; padding: 8px; }
+.chapter-source-card b, .end-completion b { font-size: 13px; }
+.end-completion p, .article-navigation>a { font-size: 12px; }
+.source-heading { min-height: 52px; }
+.source-label { font-size: 13px; }
+.source-tabs button, .source-search input, .editor-filename { font-size: 12px; }
+.source-file-list button { font-size: 11px; padding: 7px 8px; }
+.code-scroll pre { font-size: 12px; line-height: 21px; }
+.source-annotation>b { font-size: 12px; }
+.source-annotation>p, .source-footer { font-size: 11px; }
+:root[data-theme=light] .hljs { color: #263329; }
+:root[data-theme=light] .hljs-keyword,
+:root[data-theme=light] .hljs-selector-tag,
+:root[data-theme=light] .hljs-literal { color: #7846a1; }
+:root[data-theme=light] .hljs-string,
+:root[data-theme=light] .hljs-attr { color: #386b2d; }
+:root[data-theme=light] .hljs-title,
+:root[data-theme=light] .hljs-function { color: #236a94; }
+:root[data-theme=light] .hljs-number,
+:root[data-theme=light] .hljs-variable,
+:root[data-theme=light] .hljs-params { color: #955521; }
+:root[data-theme=light] .hljs-comment { color: #66746a; }
+@media (max-width: 960px) {
+  .article-layout { padding: 28px 26px 56px; }
+  .topbar { gap: 12px; }
+}
+@media (max-width: 720px) {
+  .topbar { gap: 9px; }
+  .sidebar { padding: 14px 10px 12px; width: min(300px, 88vw); }
+  .workspace-name { padding-bottom: 12px; }
+  .workspace-icon { width: 32px; height: 32px; }
+  .workspace-name small { margin-top: 4px; }
+  .side-shortcuts { padding-bottom: 8px; margin-bottom: 10px; }
+  .side-shortcuts a { padding: 7px 10px; }
+  .sidebar-label { padding-bottom: 9px; }
+  .progress-card { padding: 10px; margin-top: 10px; }
+  .progress-bar { margin: 9px 0 5px; }
+  .article-layout { padding: 24px 20px 48px; }
+  .article-title { font-size: 27px; }
+  .article-breadcrumb { font-size: 11px; margin-bottom: 20px; }
+  .markdown-body { font-size: 14px; }
+  .markdown-body h2 { font-size: 19px; }
+  .markdown-body pre { font-size: 12px; padding: 14px; }
+  .welcome p { font-size: 13px; }
+  .chapter-source-card { flex-wrap: wrap; }
+  .chapter-source-card>div { flex-basis: 100%; }
+}
