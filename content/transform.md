@@ -1,6 +1,6 @@
 # Transform：指令和优化信息
 
-> **本章目标：**节点转换、helper 收集和 PatchFlags。建议预留约 28 分钟，先理解机制，再沿源码验证。
+> **本章目标**：节点转换、helper 收集和 PatchFlags。建议预留约 28 分钟，先理解机制，再沿源码验证。
 
 ## 一、理解核心原理
 
@@ -42,7 +42,7 @@ function transformExample(node) {
 
 ## 六、自检与复盘
 
-**问：**节点转换、helper 收集和 PatchFlags涉及的关键机制怎样在真实项目中帮助排查问题？
+**问**：节点转换、helper 收集和 PatchFlags涉及的关键机制怎样在真实项目中帮助排查问题？
 
 <details><summary>展开参考思路</summary>
 

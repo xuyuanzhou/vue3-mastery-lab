@@ -1,13 +1,13 @@
 # Vue Router 的响应式导航
 
-> **本章目标：**路由匹配、守卫与视图渲染。建议预留约 23 分钟，先理解机制，再沿源码验证。
+> **本章目标**：路由匹配、守卫与视图渲染。建议预留约 23 分钟，先理解机制，再沿源码验证。
 
 ## 一、理解核心原理
 
 Router 使用响应式当前路由、路由记录匹配和导航守卫协调 RouterLink、RouterView 与历史记录。Router 源码位于独立 vuejs/router 仓库，而不是 vuejs/core。
 
 
-**生态源码：**[vuejs/router](https://github.com/vuejs/router/tree/main/packages/router/src)；本章右侧 Vue core 文件仅展示路由视图依赖的组件运行时机制。
+**生态源码**：[vuejs/router](https://github.com/vuejs/router/tree/main/packages/router/src)；本章右侧 Vue core 文件仅展示路由视图依赖的组件运行时机制。
 这一步先明确**哪个对象持有状态、哪个动作导致状态变化、哪个函数接收变化**，再把同一套概念对照实际代码；直接背 API 很难解释异常行为。
 
 ## 二、源码追踪与调用链
@@ -44,7 +44,7 @@ const router = createRouter({
 
 ## 六、自检与复盘
 
-**问：**路由匹配、守卫与视图渲染涉及的关键机制怎样在真实项目中帮助排查问题？
+**问**：路由匹配、守卫与视图渲染涉及的关键机制怎样在真实项目中帮助排查问题？
 
 <details><summary>展开参考思路</summary>
 

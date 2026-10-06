@@ -2,6 +2,8 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import assert from 'node:assert/strict'
+import MarkdownIt from 'markdown-it'
+const markdown = new MarkdownIt()
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const read = path => readFileSync(resolve(root,path), 'utf8')
 const course = read('src/data/course.ts')
@@ -12,6 +14,7 @@ const ids = metadata.map(x=>x[1])
 const content = readdirSync(resolve(root,'content')).filter(x=>x.endsWith('.md'))
 assert.equal(content.length,58,'Markdown 章数与目录一致')
 for(const row of metadata){const id=row[1],path=`content/${id}.md`,body=read(path)
+ assert.ok(!/\*\*(学习目标|本章目标|试着分析|问)/.test(markdown.render(body)),`${id} 中文加粗标记未正确渲染`)
  assert.ok(body.length>500,`${id} 正文过短`)
  assert.ok(body.includes(id.startsWith('basic-')?'## 二、动手示例':'## 二、源码追踪'),`${id} 缺少主体章节`)
  assert.ok(body.includes(row[6]),`${id} 未引用对应源码`)

@@ -1,6 +1,6 @@
 # 编译全链路：template 到 render
 
-> **本章目标：**baseCompile 和 transform/codegen 的分工。建议预留约 32 分钟，先理解机制，再沿源码验证。
+> **本章目标**：baseCompile 和 transform/codegen 的分工。建议预留约 32 分钟，先理解机制，再沿源码验证。
 
 ## 一、理解核心原理
 
@@ -40,7 +40,7 @@ console.log(code)
 
 ## 六、自检与复盘
 
-**问：**baseCompile 和 transform/codegen 的分工涉及的关键机制怎样在真实项目中帮助排查问题？
+**问**：baseCompile 和 transform/codegen 的分工涉及的关键机制怎样在真实项目中帮助排查问题？
 
 <details><summary>展开参考思路</summary>
 

@@ -1,6 +1,6 @@
 # 组件实例与 setup
 
-> **本章目标：**props、slots、代理对象和 setupContext。建议预留约 33 分钟，先理解机制，再沿源码验证。
+> **本章目标**：props、slots、代理对象和 setupContext。建议预留约 33 分钟，先理解机制，再沿源码验证。
 
 ## 一、理解核心原理
 
@@ -44,7 +44,7 @@ setup 不会在组件每次更新时重新执行；组件代理的字段查找�
 
 ## 六、自检与复盘
 
-**问：**props、slots、代理对象和 setupContext涉及的关键机制怎样在真实项目中帮助排查问题？
+**问**：props、slots、代理对象和 setupContext涉及的关键机制怎样在真实项目中帮助排查问题？
 
 <details><summary>展开参考思路</summary>
 

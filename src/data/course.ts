@@ -3,16 +3,16 @@ export type Chapter = {
   source: string; symbol: string; officialDoc?: string; level: '入门' | '进阶' | '深入';
 }
 export const groups: { id: string; title: string; description: string }[] = [
-  { id: 'basic-start', title: '基础 01 · 认识与上手', description: 'Vue 3、Vite、单文件组件' },
-  { id: 'basic-essentials', title: '基础 02 · 模板与响应式', description: '指令、响应式、表单、侦听器和生命周期' },
-  { id: 'basic-components', title: '基础 03 · 组件与通信', description: 'Props、事件、v-model、插槽和注入' },
-  { id: 'basic-practice', title: '基础 04 · 工程与实践', description: 'Composables、内置组件、Router、Pinia 和 TS' },
-  { id: 'start', title: '00 · 阅读起点', description: '准备知识、仓库导航与调用链' },
-  { id: 'reactivity', title: '01 · 响应式系统', description: 'Proxy、依赖、effect 与衍生状态' },
-  { id: 'runtime', title: '02 · 运行时与组件', description: 'VNode、组件实例、挂载和生命周期' },
-  { id: 'renderer', title: '03 · 渲染与更新', description: 'patch、Diff、调度队列与性能优化' },
-  { id: 'compiler', title: '04 · 编译器与 SFC', description: '模板解析、AST、转换与代码生成' },
-  { id: 'ecosystem', title: '05 · 生态与工程', description: 'Router、Pinia、SSR、调试和面试' },
+  { id: 'basic-start', title: '01 · 认识与上手', description: 'Vue 3、Vite、单文件组件' },
+  { id: 'basic-essentials', title: '02 · 模板与响应式', description: '指令、响应式、表单、侦听器和生命周期' },
+  { id: 'basic-components', title: '03 · 组件与通信', description: 'Props、事件、v-model、插槽和注入' },
+  { id: 'basic-practice', title: '04 · 工程与实践', description: 'Composables、内置组件、Router、Pinia 和 TS' },
+  { id: 'start', title: '05 · 阅读起点', description: '准备知识、仓库导航与调用链' },
+  { id: 'reactivity', title: '06 · 响应式系统', description: 'Proxy、依赖、effect 与衍生状态' },
+  { id: 'runtime', title: '07 · 运行时与组件', description: 'VNode、组件实例、挂载和生命周期' },
+  { id: 'renderer', title: '08 · 渲染与更新', description: 'patch、Diff、调度队列与性能优化' },
+  { id: 'compiler', title: '09 · 编译器与 SFC', description: '模板解析、AST、转换与代码生成' },
+  { id: 'ecosystem', title: '10 · 生态与工程', description: 'Router、Pinia、SSR、调试和面试' },
 ]
 export const chapters: Chapter[] = [
   { id:'basic-intro',group:'basic-start',title:'Vue 3 是什么',subtitle:'声明式渲染、组件化与两种 API 风格',minutes:14,source:'packages/vue/src/index.ts',symbol:'Vue',officialDoc:'https://cn.vuejs.org/guide/introduction.html',level:'入门' },

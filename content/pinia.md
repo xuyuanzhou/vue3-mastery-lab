@@ -1,13 +1,13 @@
 # Pinia：状态、getter 与 action
 
-> **本章目标：**组合式 Store 如何借助 Vue 响应式。建议预留约 23 分钟，先理解机制，再沿源码验证。
+> **本章目标**：组合式 Store 如何借助 Vue 响应式。建议预留约 23 分钟，先理解机制，再沿源码验证。
 
 ## 一、理解核心原理
 
 Pinia 的 setup store 使用 Vue 的 ref、reactive、computed 和 effectScope 管理状态、派生值与动作；storeToRefs 保持解构后状态和 getter 的响应式。Pinia 源码位于独立仓库。
 
 
-**生态源码：**[vuejs/pinia](https://github.com/vuejs/pinia/tree/v3/packages/pinia/src)；本章右侧 Vue core 文件用于理解 Pinia 使用的响应式作用域。
+**生态源码**：[vuejs/pinia](https://github.com/vuejs/pinia/tree/v3/packages/pinia/src)；本章右侧 Vue core 文件用于理解 Pinia 使用的响应式作用域。
 这一步先明确**哪个对象持有状态、哪个动作导致状态变化、哪个函数接收变化**，再把同一套概念对照实际代码；直接背 API 很难解释异常行为。
 
 ## 二、源码追踪与调用链
@@ -45,7 +45,7 @@ const useCounter = defineStore('counter', () => {
 
 ## 六、自检与复盘
 
-**问：**组合式 Store 如何借助 Vue 响应式涉及的关键机制怎样在真实项目中帮助排查问题？
+**问**：组合式 Store 如何借助 Vue 响应式涉及的关键机制怎样在真实项目中帮助排查问题？
 
 <details><summary>展开参考思路</summary>
 

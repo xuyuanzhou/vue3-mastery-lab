@@ -1,6 +1,6 @@
 # Class 与 Style 绑定
 
-> **学习目标：**对象语法、数组语法与动态样式。约 15 分钟。本文依据 Vue 3 官方指南组织，用独立示例和练习讲清用法；右侧源码是进一步深入的关联入口。
+> **学习目标**：对象语法、数组语法与动态样式。约 15 分钟。本文依据 Vue 3 官方指南组织，用独立示例和练习讲清用法；右侧源码是进一步深入的关联入口。
 
 ## 一、概念与适用场景
 
@@ -24,7 +24,7 @@ const color = ref('seagreen')
 </template>
 ```
 
-**试着分析：**这里的输入由谁持有？执行什么动作后发生变化？页面或子组件如何接收到变化？能否在不改变数据所有权的前提下完成需求？
+**试着分析**：这里的输入由谁持有？执行什么动作后发生变化？页面或子组件如何接收到变化？能否在不改变数据所有权的前提下完成需求？
 
 ## 三、常见问题与边界
 
@@ -46,9 +46,9 @@ const color = ref('seagreen')
 
 </details>
 
-**关联源文件：**[`packages/runtime-dom/src/modules/class.ts`](source:packages/runtime-dom/src/modules/class.ts#patchClass)（Vue 核心 v3.5.43，右侧可查看）。
+**关联源文件**：[`packages/runtime-dom/src/modules/class.ts`](source:packages/runtime-dom/src/modules/class.ts#patchClass)（Vue 核心 v3.5.43，右侧可查看）。
 
-**Vue 官方教程：**[打开本章对应的官网指南](https://cn.vuejs.org/guide/essentials/class-and-style.html)。官网内容会持续更新，与本项目固定的源码 tag 不一定完全同步。
+**Vue 官方教程**：[打开本章对应的官网指南](https://cn.vuejs.org/guide/essentials/class-and-style.html)。官网内容会持续更新，与本项目固定的源码 tag 不一定完全同步。
 
 ---
 
